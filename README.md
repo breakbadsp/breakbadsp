@@ -1,7 +1,7 @@
 - 👋 Hi, I’m @breakbadsp
 - 👀 I’m interested in software developement/architecture/low latency/data structures/
 - 🌱 I’m currently learning rust
-- 💞️ I’m looking to collaborate on c++
+- 💞️ I’m looking to collaborate on c++/rust
 - 📫 Reach me @breakbadsp on twitter
 
 <!---
