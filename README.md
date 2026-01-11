@@ -1,4 +1,4 @@
-- 👋 Hi, I’m Sachin, I am a software developer majorly working on Trading systems(low latency, high throughput)
+- 👋 Hi, I’m Sachin, majorly working on Trading systems(low latency, high throughput)
 - 📫 Reach me @breakbadsp on twitter
 
 <h3 align="left">⚙️ GitHub Analytics</h3>
