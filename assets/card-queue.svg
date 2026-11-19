@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="52" viewBox="0 0 880 52" role="img" aria-label="">
+  <title>Lock-free queues, pools, pinned threads</title>
+  <style>
+    .bg{fill:#161b22;stroke:#30363d}
+    .t{font:600 12px ui-monospace,SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace;fill:#e6edf3;letter-spacing:.8px}
+    .s{font:500 11px -apple-system,"Segoe UI",Helvetica,Arial,"Liberation Sans",sans-serif;fill:#8b949e}
+    .slot{fill:#21262d}
+    .hot{fill:#00e59b}
+    @media (prefers-reduced-motion:no-preference){
+      .slot{animation:tok 2.8s linear infinite}
+      .k1{animation-delay:-.2s}.k2{animation-delay:-.4s}.k3{animation-delay:-.6s}
+      .k4{animation-delay:-.8s}.k5{animation-delay:-1s}.k6{animation-delay:-1.2s}
+      .k7{animation-delay:-1.4s}.k8{animation-delay:-1.6s}.k9{animation-delay:-1.8s}
+      .k10{animation-delay:-2s}.k11{animation-delay:-2.2s}.k12{animation-delay:-2.4s}
+      .k13{animation-delay:-2.6s}
+    }
+    @keyframes tok{0%,8%{fill:#00e59b}16%,100%{fill:#21262d}}
+  </style>
+  <rect class="bg" width="880" height="52" rx="8"/>
+  <circle cx="18" cy="26" r="3.5" fill="#00e59b"/>
+  <text class="t" x="30" y="23">LOCK-FREE QUEUES</text>
+  <text class="s" x="30" y="39">pools · pinned threads</text>
+  <g transform="translate(430,16)">
+    <rect class="slot hot k0" width="22" height="20" rx="3"/>
+    <rect class="slot k1" x="28" width="22" height="20" rx="3"/>
+    <rect class="slot k2" x="56" width="22" height="20" rx="3"/>
+    <rect class="slot k3" x="84" width="22" height="20" rx="3"/>
+    <rect class="slot k4" x="112" width="22" height="20" rx="3"/>
+    <rect class="slot k5" x="140" width="22" height="20" rx="3"/>
+    <rect class="slot k6" x="168" width="22" height="20" rx="3"/>
+    <rect class="slot k7" x="196" width="22" height="20" rx="3"/>
+    <rect class="slot k8" x="224" width="22" height="20" rx="3"/>
+    <rect class="slot k9" x="252" width="22" height="20" rx="3"/>
+    <rect class="slot k10" x="280" width="22" height="20" rx="3"/>
+    <rect class="slot k11" x="308" width="22" height="20" rx="3"/>
+    <rect class="slot k12" x="336" width="22" height="20" rx="3"/>
+    <rect class="slot k13" x="364" width="22" height="20" rx="3"/>
+  </g>
+</svg>
