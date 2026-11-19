@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="190" viewBox="0 0 880 190" role="img" aria-label="Measured numbers from breakbadsp repositories">
+  <style>
+    .bg{fill:#0d1117}
+    .tile{fill:#161b22;stroke:#30363d;stroke-width:1}
+    .k{font:700 30px ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;fill:#00e59b}
+    .u{font:600 14px ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;fill:#7ee2b8}
+    .l{font:600 12.5px -apple-system,Segoe UI,Helvetica,Arial,sans-serif;fill:#e6edf3}
+    .s{font:400 11.5px -apple-system,Segoe UI,Helvetica,Arial,sans-serif;fill:#8b949e}
+    .r{font:500 10.5px ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;fill:#6e7681}
+    .h{font:600 11px ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;fill:#8b949e;letter-spacing:2px}
+    .dot{fill:#00e59b;animation:p 1.6s ease-in-out infinite}
+    @keyframes p{0%,100%{opacity:1}50%{opacity:.25}}
+  </style>
+  <rect class="bg" width="880" height="190" rx="12"/>
+  <circle class="dot" cx="24" cy="22" r="4"/>
+  <text class="h" x="36" y="26">MEASURED · NOT MARKETING — numbers copied from the repos' own benchmark docs</text>
+
+  <g transform="translate(16,42)">
+    <rect class="tile" width="203" height="132" rx="10"/>
+    <text x="16" y="44"><tspan class="k">2.39M</tspan><tspan class="u" dx="6">ops/s</tspan></text>
+    <text class="l" x="16" y="72">exchange over loopback TCP</text>
+    <text class="s" x="16" y="92">closed loop, window 64</text>
+    <text class="s" x="16" y="108">p50 22 µs · p99 47 µs</text>
+    <text class="r" x="16" y="124">modern_exchng_cpp</text>
+  </g>
+  <g transform="translate(231,42)">
+    <rect class="tile" width="203" height="132" rx="10"/>
+    <text x="16" y="44"><tspan class="k">~73</tspan><tspan class="u" dx="6">ns</tspan></text>
+    <text class="l" x="16" y="72">per command, single thread</text>
+    <text class="s" x="16" y="92">SPSC push → ProcessOne</text>
+    <text class="s" x="16" y="108">→ drain, no hot-path alloc</text>
+    <text class="r" x="16" y="124">modern_exchng_cpp</text>
+  </g>
+  <g transform="translate(446,42)">
+    <rect class="tile" width="203" height="132" rx="10"/>
+    <text x="16" y="44"><tspan class="k">3.75M</tspan><tspan class="u" dx="6">ops/s</tspan></text>
+    <text class="l" x="16" y="72">8 clients, 2 pinned engines</text>
+    <text class="s" x="16" y="92">one busy-polling gateway</text>
+    <text class="s" x="16" y="108">0 drops · 0 seq gaps</text>
+    <text class="r" x="16" y="124">modern_exchng_cpp</text>
+  </g>
+  <g transform="translate(661,42)">
+    <rect class="tile" width="203" height="132" rx="10"/>
+    <text x="16" y="44"><tspan class="k">4.08%</tspan><tspan class="u" dx="6">of a core</tspan></text>
+    <text class="l" x="16" y="72">collector @ 1,000 threads</text>
+    <text class="s" x="16" y="92">10 Hz · was 32.2% in Python</text>
+    <text class="s" x="16" y="108">dashboard p95 0.89 ms</text>
+    <text class="r" x="16" y="124">triangulator</text>
+  </g>
+</svg>

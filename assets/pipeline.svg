@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="170" viewBox="0 0 880 170" role="img" aria-label="Order path: clients, gateway, SPSC queues, pinned matching engines, libvsr replication">
+  <style>
+    .bg{fill:#0d1117}
+    .box{fill:#161b22;stroke:#30363d;stroke-width:1}
+    .hot{fill:#0f2a20;stroke:#00e59b;stroke-width:1.2}
+    .t{font:700 13px ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;fill:#e6edf3}
+    .s{font:400 11px -apple-system,Segoe UI,Helvetica,Arial,sans-serif;fill:#8b949e}
+    .h{font:600 11px ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;fill:#8b949e;letter-spacing:2px}
+    .ln{stroke:#30363d;stroke-width:2;fill:none}
+    .pk{fill:#00e59b}
+    .pk2{fill:#f0b429}
+  </style>
+  <rect class="bg" width="880" height="170" rx="12"/>
+  <text class="h" x="24" y="26">THE HOT PATH I KEEP REBUILDING — order in, fill out, replicated</text>
+
+  <path id="a" class="ln" d="M150 95 H210"/>
+  <path id="b" class="ln" d="M350 95 H410"/>
+  <path id="c" class="ln" d="M550 95 H610"/>
+  <path id="d" class="ln" d="M750 95 H760"/>
+
+  <g transform="translate(20,60)"><rect class="box" width="130" height="70" rx="9"/>
+    <text class="t" x="14" y="28">clients</text><text class="s" x="14" y="46">binary wire protocol</text><text class="s" x="14" y="60">New · Cancel · Replace</text></g>
+  <g transform="translate(210,60)"><rect class="box" width="140" height="70" rx="9"/>
+    <text class="t" x="14" y="28">gateway</text><text class="s" x="14" y="46">epoll / io_uring</text><text class="s" x="14" y="60">busy-poll, batched send</text></g>
+  <g transform="translate(410,60)"><rect class="box" width="140" height="70" rx="9"/>
+    <text class="t" x="14" y="28">SPSC rings</text><text class="s" x="14" y="46">cache-line aligned</text><text class="s" x="14" y="60">head / tail atomics</text></g>
+  <g transform="translate(610,60)"><rect class="hot" width="140" height="70" rx="9"/>
+    <text class="t" x="14" y="28" fill="#00e59b">engine × N</text><text class="s" x="14" y="46">pinned core, FIFO book</text><text class="s" x="14" y="60">pre-sized pools</text></g>
+  <g transform="translate(760,60)"><rect class="box" width="100" height="70" rx="9"/>
+    <text class="t" x="14" y="28">libvsr</text><text class="s" x="14" y="46">Viewstamped</text><text class="s" x="14" y="60">Replication</text></g>
+
+  <circle class="pk" r="4"><animateMotion dur="1.2s" repeatCount="indefinite"><mpath href="#a"/></animateMotion></circle>
+  <circle class="pk" r="4"><animateMotion dur="1.2s" begin="0.3s" repeatCount="indefinite"><mpath href="#b"/></animateMotion></circle>
+  <circle class="pk" r="4"><animateMotion dur="1.2s" begin="0.6s" repeatCount="indefinite"><mpath href="#c"/></animateMotion></circle>
+  <circle class="pk2" r="3"><animateMotion dur="1.6s" begin="0.2s" repeatCount="indefinite"><mpath href="#b"/></animateMotion></circle>
+  <text class="s" x="24" y="155">clients → gateway → SPSC → engine → libvsr. Each box is code in modern_exchng_cpp + libvsr.</text>
+</svg>
