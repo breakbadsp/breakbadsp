@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="48" viewBox="0 0 440 48" role="img" aria-label="">
+  <title>FIFO price-time</title>
+  <style>
+    .bg{fill:#161b22;stroke:#30363d}
+    .t{font:600 12px ui-monospace,SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace;fill:#e6edf3;letter-spacing:.8px}
+    .d{fill:#00e59b}
+    @media (prefers-reduced-motion:no-preference){
+      .d{animation:pulse 2.2s ease-in-out infinite}
+      .a1{animation:aw1 2.6s ease-in-out infinite alternate}
+      .a2{animation:aw2 3.2s ease-in-out infinite alternate}
+      .b1{animation:bw1 2.8s ease-in-out infinite alternate}
+      .b2{animation:bw2 3.4s ease-in-out infinite alternate}
+    }
+    @keyframes pulse{50%{opacity:.3}}
+    @keyframes aw1{from{width:36px}to{width:92px}}
+    @keyframes aw2{from{width:22px}to{width:54px}}
+    @keyframes bw1{from{width:34px}to{width:92px}}
+    @keyframes bw2{from{width:24px}to{width:62px}}
+  </style>
+  <rect class="bg" width="440" height="48" rx="8"/>
+  <circle class="d" cx="18" cy="24" r="3.5"/>
+  <text class="t" x="30" y="28">FIFO · PRICE-TIME</text>
+  <rect class="a1" x="328" y="9" width="92" height="5" rx="1.5" fill="#ff7b72"/>
+  <rect class="a2" x="328" y="17" width="54" height="5" rx="1.5" fill="#ff7b72" opacity=".8"/>
+  <rect class="b1" x="328" y="27" width="92" height="5" rx="1.5" fill="#00e59b"/>
+  <rect class="b2" x="328" y="35" width="62" height="5" rx="1.5" fill="#00e59b" opacity=".75"/>
+</svg>

@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="48" viewBox="0 0 440 48" role="img" aria-label="">
+  <title>Per-symbol price-time book</title>
+  <style>
+    .bg{fill:#161b22;stroke:#30363d}
+    .t{font:600 12px ui-monospace,SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace;fill:#e6edf3;letter-spacing:.6px}
+    .lv{fill:#21262d}
+    .on{fill:#00e59b}
+    @media (prefers-reduced-motion:no-preference){
+      .c0{animation:col 2.4s ease-in-out infinite}
+      .c1{animation:col 2.4s ease-in-out infinite;animation-delay:-.8s}
+      .c2{animation:col 2.4s ease-in-out infinite;animation-delay:-1.6s}
+    }
+    @keyframes col{0%,100%{fill:#21483a}40%,60%{fill:#00e59b}}
+  </style>
+  <rect class="bg" width="440" height="48" rx="8"/>
+  <circle cx="16" cy="24" r="3.5" fill="#00e59b"/>
+  <text class="t" x="28" y="28">PRICE-TIME · PER-SYMBOL</text>
+  <g transform="translate(292,10)">
+    <rect class="lv" x="0" y="16" width="14" height="12" rx="1.5"/>
+    <rect class="lv" x="0" y="8" width="14" height="6" rx="1"/>
+    <rect class="c0" x="0" y="0" width="14" height="6" rx="1"/>
+    <rect class="lv" x="22" y="14" width="14" height="14" rx="1.5"/>
+    <rect class="lv" x="22" y="8" width="14" height="4" rx="1"/>
+    <rect class="c1" x="22" y="0" width="14" height="6" rx="1"/>
+    <rect class="lv" x="44" y="12" width="14" height="16" rx="1.5"/>
+    <rect class="c2" x="44" y="4" width="14" height="6" rx="1"/>
+    <rect class="lv" x="66" y="18" width="14" height="10" rx="1.5"/>
+    <rect class="lv" x="66" y="10" width="14" height="6" rx="1"/>
+    <rect class="c0" x="66" y="2" width="14" height="6" rx="1" style="animation-delay:-1.2s"/>
+  </g>
+</svg>

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="48" viewBox="0 0 440 48" role="img" aria-label="">
+  <title>Viewstamped Replication</title>
+  <style>
+    .bg{fill:#161b22;stroke:#30363d}
+    .t{font:600 12px ui-monospace,SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace;fill:#e6edf3;letter-spacing:.6px}
+    .n{fill:#21262d;stroke:#30363d;stroke-width:1.2}
+    .n0{fill:#00e59b;stroke:#00e59b}
+    @media (prefers-reduced-motion:no-preference){
+      .n{animation:node 2.4s ease-in-out infinite}
+      .n1{animation-delay:-.8s}
+      .n2{animation-delay:-1.6s}
+      .link{stroke-dasharray:3 5;animation:march 1.6s linear infinite}
+    }
+    @keyframes node{0%,100%{fill:#21262d;stroke:#30363d}28%,48%{fill:#00e59b;stroke:#00e59b}}
+    @keyframes march{to{stroke-dashoffset:-16}}
+  </style>
+  <rect class="bg" width="440" height="48" rx="8"/>
+  <circle cx="16" cy="24" r="3.5" fill="#00e59b"/>
+  <text class="t" x="28" y="28">VIEWSTAMPED REPLICATION</text>
+  <line class="link" x1="286" y1="24" x2="410" y2="24" stroke="#00e59b" stroke-width="1.4" opacity=".7"/>
+  <circle class="n n0" cx="286" cy="24" r="6"/>
+  <circle class="n n1" cx="348" cy="24" r="6"/>
+  <circle class="n n2" cx="410" cy="24" r="6"/>
+</svg>

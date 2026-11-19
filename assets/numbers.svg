@@ -1,50 +1,91 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="880" height="190" viewBox="0 0 880 190" role="img" aria-label="Measured numbers from breakbadsp repositories">
+  <title>Measured numbers from the repos</title>
   <style>
     .bg{fill:#0d1117}
     .tile{fill:#161b22;stroke:#30363d;stroke-width:1}
-    .k{font:700 30px ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;fill:#00e59b}
-    .u{font:600 14px ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;fill:#7ee2b8}
-    .l{font:600 12.5px -apple-system,Segoe UI,Helvetica,Arial,sans-serif;fill:#e6edf3}
-    .s{font:400 11.5px -apple-system,Segoe UI,Helvetica,Arial,sans-serif;fill:#8b949e}
-    .r{font:500 10.5px ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;fill:#6e7681}
-    .h{font:600 11px ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;fill:#8b949e;letter-spacing:2px}
-    .dot{fill:#00e59b;animation:p 1.6s ease-in-out infinite}
+    .k{font:700 30px ui-monospace,SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace;fill:#00e59b}
+    .u{font:600 14px ui-monospace,SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace;fill:#7ee2b8}
+    .l{font:600 12.5px -apple-system,"Segoe UI",Helvetica,Arial,"Liberation Sans",sans-serif;fill:#e6edf3}
+    .s{font:400 11.5px -apple-system,"Segoe UI",Helvetica,Arial,"Liberation Sans",sans-serif;fill:#8b949e}
+    .r{font:500 10.5px ui-monospace,SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace;fill:#6e7681}
+    .h{font:600 11px ui-monospace,SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace;fill:#8b949e;letter-spacing:2px}
+    .dot{fill:#00e59b}
+    .ul{fill:#00e59b;opacity:.75}
+    .shim{opacity:.9}
+    @media (prefers-reduced-motion:no-preference){
+      .dot{animation:p 2.2s ease-in-out infinite}
+      .tw{animation:rise .7s cubic-bezier(.16,1,.3,1) both}
+      .d2{animation-delay:.1s}
+      .d3{animation-delay:.2s}
+      .d4{animation-delay:.3s}
+      .ul{animation:grow .55s cubic-bezier(.16,1,.3,1) both}
+      .u2{animation-delay:.22s}
+      .u3{animation-delay:.34s}
+      .u4{animation-delay:.46s}
+      .tile{animation:edge 5.6s ease-in-out infinite}
+      .e2{animation-delay:-1.4s}
+      .e3{animation-delay:-2.8s}
+      .e4{animation-delay:-4.2s}
+      .shim{animation:shim 4.8s ease-in-out infinite}
+      .sh2{animation-delay:-1.2s}
+      .sh3{animation-delay:-2.4s}
+      .sh4{animation-delay:-3.6s}
+    }
     @keyframes p{0%,100%{opacity:1}50%{opacity:.25}}
+    @keyframes rise{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+    @keyframes grow{from{width:0}to{width:var(--w)}}
+    @keyframes edge{0%,100%{stroke:#30363d}50%{stroke:#1b6b48}}
+    @keyframes shim{0%,18%{transform:translateX(0)}62%,100%{transform:translateX(270px)}}
   </style>
+  <defs>
+    <linearGradient id="shine" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#00e59b" stop-opacity="0"/>
+      <stop offset=".5" stop-color="#e7fff6" stop-opacity=".2"/>
+      <stop offset="1" stop-color="#00e59b" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
   <rect class="bg" width="880" height="190" rx="12"/>
   <circle class="dot" cx="24" cy="22" r="4"/>
   <text class="h" x="36" y="26">MEASURED · NOT MARKETING — numbers copied from the repos' own benchmark docs</text>
 
-  <g transform="translate(16,42)">
-    <rect class="tile" width="203" height="132" rx="10"/>
+  <svg class="tw d1" x="16" y="42" width="203" height="132">
+    <rect class="tile e1" width="203" height="132" rx="10"/>
     <text x="16" y="44"><tspan class="k">2.39M</tspan><tspan class="u" dx="6">ops/s</tspan></text>
-    <text class="l" x="16" y="72">exchange over loopback TCP</text>
-    <text class="s" x="16" y="92">closed loop, window 64</text>
-    <text class="s" x="16" y="108">p50 22 µs · p99 47 µs</text>
+    <rect class="ul u1" x="16" y="54" height="2" rx="1" width="92" style="--w:92px"/>
+    <text class="l" x="16" y="76">exchange over loopback TCP</text>
+    <text class="s" x="16" y="94">closed loop, window 64</text>
+    <text class="s" x="16" y="110">p50 22 µs · p99 47 µs</text>
     <text class="r" x="16" y="124">modern_exchng_cpp</text>
-  </g>
-  <g transform="translate(231,42)">
-    <rect class="tile" width="203" height="132" rx="10"/>
+    <rect class="shim sh1" x="-70" y="8" width="42" height="116" fill="url(#shine)"/>
+  </svg>
+  <svg class="tw d2" x="231" y="42" width="203" height="132">
+    <rect class="tile e2" width="203" height="132" rx="10"/>
     <text x="16" y="44"><tspan class="k">~73</tspan><tspan class="u" dx="6">ns</tspan></text>
-    <text class="l" x="16" y="72">per command, single thread</text>
-    <text class="s" x="16" y="92">SPSC push → ProcessOne</text>
-    <text class="s" x="16" y="108">→ drain, no hot-path alloc</text>
+    <rect class="ul u2" x="16" y="54" height="2" rx="1" width="58" style="--w:58px"/>
+    <text class="l" x="16" y="76">per command, single thread</text>
+    <text class="s" x="16" y="94">SPSC push → ProcessOne</text>
+    <text class="s" x="16" y="110">→ drain, no hot-path alloc</text>
     <text class="r" x="16" y="124">modern_exchng_cpp</text>
-  </g>
-  <g transform="translate(446,42)">
-    <rect class="tile" width="203" height="132" rx="10"/>
+    <rect class="shim sh2" x="-70" y="8" width="42" height="116" fill="url(#shine)"/>
+  </svg>
+  <svg class="tw d3" x="446" y="42" width="203" height="132">
+    <rect class="tile e3" width="203" height="132" rx="10"/>
     <text x="16" y="44"><tspan class="k">3.75M</tspan><tspan class="u" dx="6">ops/s</tspan></text>
-    <text class="l" x="16" y="72">8 clients, 2 pinned engines</text>
-    <text class="s" x="16" y="92">one busy-polling gateway</text>
-    <text class="s" x="16" y="108">0 drops · 0 seq gaps</text>
+    <rect class="ul u3" x="16" y="54" height="2" rx="1" width="96" style="--w:96px"/>
+    <text class="l" x="16" y="76">8 clients, 2 pinned engines</text>
+    <text class="s" x="16" y="94">one busy-polling gateway</text>
+    <text class="s" x="16" y="110">0 drops · 0 seq gaps</text>
     <text class="r" x="16" y="124">modern_exchng_cpp</text>
-  </g>
-  <g transform="translate(661,42)">
-    <rect class="tile" width="203" height="132" rx="10"/>
-    <text x="16" y="44"><tspan class="k">4.08%</tspan><tspan class="u" dx="6">of a core</tspan></text>
-    <text class="l" x="16" y="72">collector @ 1,000 threads</text>
-    <text class="s" x="16" y="92">10 Hz · was 32.2% in Python</text>
-    <text class="s" x="16" y="108">dashboard p95 0.89 ms</text>
+    <rect class="shim sh3" x="-70" y="8" width="42" height="116" fill="url(#shine)"/>
+  </svg>
+  <svg class="tw d4" x="661" y="42" width="203" height="132">
+    <rect class="tile e4" width="203" height="132" rx="10"/>
+    <text x="16" y="44"><tspan class="k">4.08%</tspan><tspan class="u" dx="12">of a core</tspan></text>
+    <rect class="ul u4" x="16" y="54" height="2" rx="1" width="88" style="--w:88px"/>
+    <text class="l" x="16" y="76">collector @ 1,000 threads</text>
+    <text class="s" x="16" y="94">10 Hz · was 32.2% in Python</text>
+    <text class="s" x="16" y="110">dashboard p95 0.89 ms</text>
     <text class="r" x="16" y="124">triangulator</text>
-  </g>
+    <rect class="shim sh4" x="-70" y="8" width="42" height="116" fill="url(#shine)"/>
+  </svg>
 </svg>

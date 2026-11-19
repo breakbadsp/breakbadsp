@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="176" viewBox="0 0 880 176" role="img" aria-label="Terminal typing whoami: matching engines, order books, FIFO price-time; SPSC rings, pinned cores, zero hot-path allocation; Viewstamped Replication for crash-safe exchanges; C++26 by day, Rust by choice.">
+  <title>whoami</title>
+  <style>
+    .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace}
+    .chrome{font:500 12px ui-monospace,SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace;fill:#8b949e}
+    .cmd{font:500 15px ui-monospace,SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace;fill:#e6edf3}
+    .out{font:500 15px ui-monospace,SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace;fill:#9be9c8}
+    .cur{fill:#00e59b}
+    .wipe{width:820px}
+    @media (prefers-reduced-motion:no-preference){
+      .gdot{animation:pulse 2.4s ease-in-out infinite}
+      .cur{animation:blink 1.15s steps(1,end) infinite}
+      .lines{animation:vis 16s linear infinite}
+      .w1{animation:t1 16s linear infinite both}
+      .w2{animation:t2 16s linear infinite both}
+      .w3{animation:t3 16s linear infinite both}
+      .w4{animation:t4 16s linear infinite both}
+    }
+    @keyframes pulse{50%{opacity:.35}}
+    @keyframes blink{50%{opacity:0}}
+    @keyframes vis{0%,74%{opacity:1}80%,90%{opacity:0}96%,100%{opacity:1}}
+    @keyframes t1{0%,4%{width:0}16%{width:820px}84%{width:820px}86%,100%{width:0}}
+    @keyframes t2{0%,16%{width:0}28%{width:820px}84%{width:820px}86%,100%{width:0}}
+    @keyframes t3{0%,28%{width:0}40%{width:820px}84%{width:820px}86%,100%{width:0}}
+    @keyframes t4{0%,40%{width:0}52%{width:820px}84%{width:820px}86%,100%{width:0}}
+  </style>
+  <defs>
+    <clipPath id="win"><rect width="880" height="176" rx="12"/></clipPath>
+    <clipPath id="c1"><rect class="wipe w1" x="22" y="76" height="22" width="820"/></clipPath>
+    <clipPath id="c2"><rect class="wipe w2" x="22" y="98" height="22" width="820"/></clipPath>
+    <clipPath id="c3"><rect class="wipe w3" x="22" y="120" height="22" width="820"/></clipPath>
+    <clipPath id="c4"><rect class="wipe w4" x="22" y="142" height="22" width="820"/></clipPath>
+  </defs>
+  <g clip-path="url(#win)">
+    <rect width="880" height="176" fill="#161b22"/>
+    <rect y="36" width="880" height="140" fill="#0d1117"/>
+    <circle cx="22" cy="18" r="5.5" fill="#ff7b72"/>
+    <circle cx="42" cy="18" r="5.5" fill="#f0b429"/>
+    <circle class="gdot" cx="62" cy="18" r="5.5" fill="#00e59b"/>
+    <text class="chrome" x="80" y="22">whoami</text>
+    <text class="chrome" x="856" y="22" text-anchor="end">bash</text>
+    <line x1="0" y1="36" x2="880" y2="36" stroke="#30363d"/>
+
+    <text class="cmd" x="24" y="64"><tspan fill="#00e59b">$</tspan><tspan> whoami</tspan></text>
+    <rect class="cur" x="118" y="51" width="9" height="16" rx="1"/>
+
+    <g class="lines">
+      <g clip-path="url(#c1)"><text class="out" x="24" y="92">matching engines · order books · FIFO price-time</text></g>
+      <g clip-path="url(#c2)"><text class="out" x="24" y="114">SPSC rings, pinned cores, zero hot-path allocation</text></g>
+      <g clip-path="url(#c3)"><text class="out" x="24" y="136">Viewstamped Replication for crash-safe exchanges</text></g>
+      <g clip-path="url(#c4)"><text class="out" x="24" y="158">C++26 by day, Rust by choice</text></g>
+    </g>
+  </g>
+  <rect width="880" height="176" rx="12" fill="none" stroke="#30363d"/>
+</svg>

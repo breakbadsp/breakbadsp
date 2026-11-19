@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="40" viewBox="0 0 880 40" role="img" aria-label="">
+  <title>Decorative latency trace</title>
+  <style>
+    .bg{fill:#0d1117}
+    .glow{fill:none;stroke:#0e3b2c;stroke-width:5;stroke-linecap:round;stroke-linejoin:round}
+    .ln{fill:none;stroke:#00e59b;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+    .still{display:none}
+    @media (prefers-reduced-motion:no-preference){
+      .scroll{animation:slide 14s linear infinite}
+    }
+    @media (prefers-reduced-motion:reduce){
+      .scroll{display:none}
+      .still{display:inline}
+    }
+    @keyframes slide{from{transform:translateX(0)}to{transform:translateX(-880px)}}
+  </style>
+  <rect class="bg" width="880" height="40" rx="10"/>
+  <g class="scroll">
+    <path class="glow" d="M0 22 H48 l6 -10 l4 12 l4 -2 H150 l5 -6 l3 6 H250 l8 -13 l5 16 l4 -3 H380 l4 -5 l3 5 H470 l7 -9 l4 11 l3 -2 H590 l5 -14 l6 17 l3 -3 H700 l4 -5 l3 5 H790 l6 -8 l4 10 l3 -2 H880"/>
+    <path class="glow" transform="translate(880,0)" d="M0 22 H48 l6 -10 l4 12 l4 -2 H150 l5 -6 l3 6 H250 l8 -13 l5 16 l4 -3 H380 l4 -5 l3 5 H470 l7 -9 l4 11 l3 -2 H590 l5 -14 l6 17 l3 -3 H700 l4 -5 l3 5 H790 l6 -8 l4 10 l3 -2 H880"/>
+    <path class="ln" d="M0 22 H48 l6 -10 l4 12 l4 -2 H150 l5 -6 l3 6 H250 l8 -13 l5 16 l4 -3 H380 l4 -5 l3 5 H470 l7 -9 l4 11 l3 -2 H590 l5 -14 l6 17 l3 -3 H700 l4 -5 l3 5 H790 l6 -8 l4 10 l3 -2 H880"/>
+    <path class="ln" transform="translate(880,0)" d="M0 22 H48 l6 -10 l4 12 l4 -2 H150 l5 -6 l3 6 H250 l8 -13 l5 16 l4 -3 H380 l4 -5 l3 5 H470 l7 -9 l4 11 l3 -2 H590 l5 -14 l6 17 l3 -3 H700 l4 -5 l3 5 H790 l6 -8 l4 10 l3 -2 H880"/>
+  </g>
+  <g class="still">
+    <path class="glow" d="M0 22 H48 l6 -10 l4 12 l4 -2 H150 l5 -6 l3 6 H250 l8 -13 l5 16 l4 -3 H380 l4 -5 l3 5 H470 l7 -9 l4 11 l3 -2 H590 l5 -14 l6 17 l3 -3 H700 l4 -5 l3 5 H790 l6 -8 l4 10 l3 -2 H880"/>
+    <path class="ln" d="M0 22 H48 l6 -10 l4 12 l4 -2 H150 l5 -6 l3 6 H250 l8 -13 l5 16 l4 -3 H380 l4 -5 l3 5 H470 l7 -9 l4 11 l3 -2 H590 l5 -14 l6 17 l3 -3 H700 l4 -5 l3 5 H790 l6 -8 l4 10 l3 -2 H880"/>
+  </g>
+  <defs>
+    <linearGradient id="fadeL" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#0d1117"/>
+      <stop offset="1" stop-color="#0d1117" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="fadeR" x1="1" y1="0" x2="0" y2="0">
+      <stop offset="0" stop-color="#0d1117"/>
+      <stop offset="1" stop-color="#0d1117" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="36" height="40" fill="url(#fadeL)"/>
+  <rect x="844" width="36" height="40" fill="url(#fadeR)"/>
+</svg>

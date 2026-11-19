@@ -1,12 +1,6 @@
 <!-- Header -->
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,55:0b3d2c,100:00e59b&height=190&section=header&text=Sachin%20Pandhare&fontSize=50&fontColor=e6edf3&fontAlignY=36&desc=low-latency%20%C2%B7%20high-throughput%20trading%20systems&descSize=17&descAlignY=58&descColor=9be9c8" alt="Sachin Pandhare — low-latency, high-throughput trading systems" width="100%">
-</p>
-
-<p align="center">
-  <a href="https://github.com/breakbadsp">
-    <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=17&duration=2600&pause=900&color=00E59B&center=true&vCenter=true&width=720&lines=matching+engines+%C2%B7+order+books+%C2%B7+FIFO+price-time;SPSC+rings%2C+pinned+cores%2C+zero+hot-path+allocation;Viewstamped+Replication+for+crash-safe+exchanges;C%2B%2B26+by+day%2C+Rust+by+choice" alt="matching engines · order books · SPSC rings · Viewstamped Replication · C++ and Rust">
-  </a>
+  <img src="assets/hero.svg" alt="Sachin Pandhare — low-latency, high-throughput trading systems. The depth ladder is illustrative, not a market." width="100%">
 </p>
 
 <p align="center">
@@ -14,7 +8,15 @@
   <a href="https://github.com/breakbadsp?tab=repositories"><img src="https://img.shields.io/badge/repositories-161b22?style=for-the-badge&logo=github&logoColor=white" alt="Repositories"></a>
 </p>
 
+<p align="center">
+  <img src="assets/divider.svg" alt="" width="100%">
+</p>
+
 ### `$ whoami`
+
+<p align="center">
+  <img src="assets/whoami.svg" alt="whoami — matching engines, order books, FIFO price-time; SPSC rings, pinned cores, zero hot-path allocation; Viewstamped Replication for crash-safe exchanges; C++26 by day, Rust by choice" width="100%">
+</p>
 
 I build trading infrastructure where the budget is counted in **nanoseconds**: order books, matching engines, gateways, and the queues and allocators underneath them. Professionally a C++ engineer, increasingly writing **Rust**. I like designs you can measure, so most of my repos ship with a benchmark, a profiler run, or a fault simulator next to the code.
 
@@ -26,13 +28,17 @@ I build trading infrastructure where the budget is counted in **nanoseconds**: o
   <img src="assets/pipeline.svg" alt="Order path: clients → gateway (epoll/io_uring) → SPSC rings → pinned matching engines → libvsr replication" width="100%">
 </p>
 
----
+<p align="center">
+  <img src="assets/divider.svg" alt="" width="100%">
+</p>
 
 ### ⚡ Exchanges & trading infrastructure
 
 <table>
 <tr>
 <td width="50%" valign="top">
+
+<img src="assets/card-book.svg" alt="" width="100%">
 
 <h3><a href="https://github.com/breakbadsp/modern_exchng_cpp">modern_exchng_cpp</a></h3>
 `C++26` `epoll` `io_uring` `SPSC` `contracts`
@@ -43,6 +49,8 @@ A complete exchange: limit order book with price-time (FIFO) matching, a busy-po
 
 </td>
 <td width="50%" valign="top">
+
+<img src="assets/card-vsr.svg" alt="" width="100%">
 
 <h3><a href="https://github.com/breakbadsp/libvsr">libvsr</a></h3>
 `C++23` `consensus` `deterministic simulation`
@@ -56,6 +64,8 @@ Verified by a **seeded simulator** that runs the production replica code over a 
 <tr>
 <td width="50%" valign="top">
 
+<img src="assets/card-spx.svg" alt="" width="100%">
+
 <h3><a href="https://github.com/breakbadsp/spx">spx</a></h3>
 `Rust` `cargo workspace`
 
@@ -63,6 +73,8 @@ A low-latency stock exchange in Rust: separate crates for the **matching engine*
 
 </td>
 <td width="50%" valign="top">
+
+<img src="assets/card-tape.svg" alt="" width="100%">
 
 <h3><a href="https://github.com/breakbadsp/MktDataAggregator">MktDataAggregator</a></h3>
 `C++` `mmap` `k-way merge`
@@ -74,6 +86,10 @@ Merges ~10,000 per-symbol market-data files (100+ GB) into one time-ordered tape
 </table>
 
 ### 🧵 Concurrency & systems primitives
+
+<p align="center">
+  <img src="assets/card-queue.svg" alt="" width="100%">
+</p>
 
 | Project | What it is | Under the hood |
 |:--|:--|:--|
@@ -89,6 +105,8 @@ Merges ~10,000 per-symbol market-data files (100+ GB) into one time-ordered tape
 <tr>
 <td valign="top">
 
+<img src="assets/card-tri.svg" alt="" width="100%">
+
 <h3><a href="https://github.com/breakbadsp/triangulator">triangulator</a></h3>
 `C++23` `TypeScript` `/proc` `UDP` `SQLite`
 
@@ -97,6 +115,10 @@ See what **every thread** of a Linux process is doing, live or recorded: CPU dem
 </td>
 </tr>
 </table>
+
+<p align="center">
+  <img src="assets/divider.svg" alt="" width="100%">
+</p>
 
 ---
 

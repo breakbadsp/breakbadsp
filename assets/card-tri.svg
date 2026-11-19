@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="48" viewBox="0 0 880 48" role="img" aria-label="">
+  <title>Thread sampler</title>
+  <style>
+    .bg{fill:#161b22;stroke:#30363d}
+    .t{font:600 12px ui-monospace,SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace;fill:#e6edf3;letter-spacing:.8px}
+    .spark{fill:none;stroke:#00e59b;stroke-width:1.7;stroke-linejoin:round;stroke-linecap:round}
+    .dot{fill:#00e59b}
+    @media (prefers-reduced-motion:no-preference){
+      .spark{stroke-dasharray:7 9;animation:march 1.8s linear infinite}
+      .dot{animation:pulse 2s ease-in-out infinite}
+    }
+    @keyframes march{to{stroke-dashoffset:-32}}
+    @keyframes pulse{50%{opacity:.25}}
+  </style>
+  <rect class="bg" width="880" height="48" rx="8"/>
+  <circle class="dot" cx="18" cy="24" r="3.5"/>
+  <text class="t" x="30" y="28">THREAD SAMPLER</text>
+  <path class="spark" d="M340 30 H400 l12 -16 l10 22 l8 -6 H520 l14 -18 l12 24 l8 -6 H640 l10 -12 l8 12 H740 l16 -16 l12 20 l8 -4 H830 l10 -8 l8 8 H852"/>
+  <circle class="dot" cx="852" cy="30" r="2.6"/>
+</svg>
